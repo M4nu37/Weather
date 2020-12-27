@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Weather</title>
+
+        <link rel="StyleSheet"  href="Index.css" type="text/css">
+
+        <meta charset="UTF-8">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+
+    </head>
+
+    <body onload="findWeather()">
+
+        <script src="index.js"></script> <!--Importing JS file-->
+        
+        <!--Search bar-->
+        <input id="Search" name="Search" placeholder="Search city..." class="search" >	
+        
+        <button type="button" id="button" class="searchBtn" onclick="findWeather()" >SEARCH</button>
+         
+        
+        <!--Main div-->
+        <div id="main" class="main">
+            
+            <div class="primary">
+                
+                <div id="mainImg"></div>
+
+                <div id="status"></div>
+
+                <div id="temp"></div>
+
+            </div>
+
+
+            <div class="secundary">
+
+                <div id="cityName"></div>           
+
+                <div id="hour"></div>
+
+            </div>
+            
+
+            <div class="tertiary">
+                
+                <div class="minMaxTemperature">
+
+                    <div id="max"></div>
+
+                    <div id="min"></div>
+
+                </div>
+                
+
+                <div class="otherConditions">
+    
+                    <div id="humidity"></div>
+    
+                    <div id="windSpeed"></div>
+
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <!--Forecast div-->
+        <div id="forecast" class="forecast">
+            
+            <!--Day1 div-->
+            <div id="div1" class="day">
+
+                <div id="img1"></div>
+
+                <div id="temp1"></div>
+
+                <div id="day1"></div>
+
+            </div>
+
+            <!--Day2 div-->
+            <div class="day">
+
+                <div id="img2"></div>
+
+                <div id="temp2"></div>
+
+                <div id="day2"></div>
+
+            </div>
+
+            <!--Day3 div-->
+            <div class="day">
+
+                <div id="img3"></div>
+
+                <div id="temp3"></div>
+
+                <div id="day3"></div>
+
+            </div>
+            
+            <!--Day4 div-->
+            <div class="day">
+
+                <div id="img4"></div>
+
+                <div id="temp4"></div>
+
+                <div id="day4"></div>
+
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>
