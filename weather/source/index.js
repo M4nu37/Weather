@@ -118,7 +118,7 @@ function findWeather() {
 
 
         //Max and min temperature for the day
-        let max = `<p> Min temperature: ${Math.round(data.main.temp_max)} ºC </p>`;
+        let max = `<p> Max temperature: ${Math.round(data.main.temp_max)} ºC </p>`;
         document.getElementById('max').innerHTML = max;
 
         let min = `<p> Min temperature: ${Math.round(data.main.temp_min)} ºC </p>`;
