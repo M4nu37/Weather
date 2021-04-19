@@ -6,6 +6,11 @@ addEventListener("keyup", function(event) {
     }        
 });
 
+// Prevent form from submitting
+document.getElementById('find').addEventListener('submit', e => {
+    e.preventDefault();
+});
+
 //Main function
 function findWeather() {
         
